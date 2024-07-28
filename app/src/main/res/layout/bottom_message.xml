@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="316dp"
+    android:animateLayoutChanges="true"
+    android:layout_height="@dimen/dimen_68dp">
+
+    <ImageView
+        android:id="@+id/left_cover"
+        android:layout_width="51dp"
+        android:layout_height="@dimen/dimen_68dp"
+        android:src="@drawable/img"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/container_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_68dp"
+        android:layout_weight="1"
+        android:layout_marginStart="9dp"
+        android:paddingTop="@dimen/dimen_3dp"
+        android:paddingBottom="@dimen/dimen_3dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/left_cover"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_13dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="傻白甜灰姑娘误入总裁得"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="@dimen/dimen_0dp"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:text="第2集 | 傻白甜灰姑娘误入总裁得到地方的地方"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_3dp"
+            android:lineSpacingExtra="@dimen/dimen_0dp"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/dimen_12dp"
+            android:text="3456789"
+            android:alpha="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/content" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

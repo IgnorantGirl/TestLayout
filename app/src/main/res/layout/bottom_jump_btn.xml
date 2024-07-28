@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_skip"
+    android:layout_width="223dp"
+    android:layout_height="@dimen/dimen_65dp"
+    android:background="@drawable/bg_corner_44">
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击查看详情"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:layout_marginStart="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_9dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/context_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_22dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:text="跳转详情页或第三方应用"
+        tools:text="跳转详情页或第三方应用" />
+
+    <View
+        android:id="@+id/bg_circle"
+        android:layout_width="@dimen/dimen_52dp"
+        android:layout_height="@dimen/dimen_52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:background="@drawable/bg_circle"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"/>
+
+    <ImageView
+        android:layout_width="@dimen/dimen_41dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/go"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_13dp"
+        android:layout_alignTop="@+id/bg_circle"
+        tools:background="@color/black"/>
+
+</RelativeLayout>
