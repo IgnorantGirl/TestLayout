@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_phone_accelerate_widget"
+    tools:ignore="ResourceName">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/phone_accelerate_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="68"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="18"
+            android:visibility="invisible"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="61"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/phone_accelerate_memory_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70%"
+                android:layout_gravity="left"
+                android:textColor="@color/color_1E1F24"
+                android:textSize="@dimen/dimen_26dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="@dimen/dimen_10dp"
+                android:autoSizeMaxTextSize="@dimen/dimen_26dp"
+                android:lines="1"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/memory_used_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/dimen_9dp"
+                android:text="内存占用"
+                android:textColor="@color/color_1E1F24"
+                android:textSize="@dimen/dimen_15dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="@dimen/dimen_10dp"
+                android:autoSizeMaxTextSize="@dimen/dimen_15dp"
+                android:lines="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:visibility="invisible"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="68">
+            <ProgressBar
+                android:id="@+id/phone_accelerate_progressbar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="70"
+                android:progressDrawable="@drawable/progress_circle" />
+
+            <TextView
+                android:layout_width="@dimen/dimen_34dp"
+                android:layout_height="@dimen/dimen_34dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/phone_accelerate_bottom_add_widget_icon" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/one_phone_accelerate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="42"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:background="@drawable/phone_accelerate_add_widget_view_bg"
+        android:gravity="center"
+        android:text="一键加速"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:visibility="invisible"/>
+</LinearLayout>

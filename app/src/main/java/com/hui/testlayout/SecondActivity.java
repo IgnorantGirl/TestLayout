@@ -10,10 +10,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieDrawable;
 import com.hui.testlayout.utils.UIUtils;
 import com.hui.testlayout.view.AdBrandView;
 import com.hui.testlayout.view.AdLeftLogoImage;
@@ -65,11 +68,43 @@ public class SecondActivity extends AppCompatActivity {
         BottomJumpView bottomJump = new BottomJumpView(this);
         ViewGroup.LayoutParams bottomJumpParams = bottomJump.getLayoutParams();
         setLayoutMargin(bottomJump, bottomJumpParams, 0, 0, 0, 40);
-        layout.addView(bottomJump);
+
+
+      //  layout.addView(bottomJump);
 
         layout.setBackground(ContextCompat.getDrawable(this, android.R.color.holo_red_dark));
 
+        TextView text = new TextView(this);
+        text.setId(View.generateViewId());
+        text.setText("扭动或点击跳转详情页或第三方应用");
+        text.setTextSize(18);
+        text.setTextColor(ContextCompat.getColor(this, android.R.color.white));
+        RelativeLayout.LayoutParams textParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        textParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        textParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        textParams.topMargin = 10;
+        //setLayoutMargin(text,textParams,0,0,0,40);
+        layout.addView(text,textParams);
+
+        // 动效下面的文字
+        LottieAnimationView lottie = new LottieAnimationView(this);
+        lottie.setAnimation("shake3.json");
+
+//        lottie.loop(true);
+        // lottie.setRepeatMode(LottieDrawable.REVERSE);//设置播放模式
+        lottie.setRepeatCount(LottieDrawable.INFINITE);//设置重复次数
+        RelativeLayout.LayoutParams lottieParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, UIUtils.dp2px(110));
+        lottieParams.addRule(RelativeLayout.ABOVE,text.getId());
+        lottieParams.bottomMargin = 10;
+        lottie.setLayoutParams(lottieParams);
+        layout.addView(lottie,lottieParams);
+
+
+
+
+
         setContentView(layout);
+        lottie.playAnimation();
 
         bottomJump.setOnClickListener(new View.OnClickListener(){
             @Override

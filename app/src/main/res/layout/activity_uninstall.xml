@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6FA"
+    tools:context=".UninstallActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="65dp"
+        android:text="使用过程中遇到问题了吗？"
+        android:textColor="#1E1F24"
+        android:textSize="@dimen/dimen_22dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="我们期望解决您的问题，带来更好的用户体验"
+        android:textColor="#848691"
+        android:textSize="@dimen/dimen_13dp" />
+
+    <RelativeLayout
+        android:id="@+id/haokan"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_88dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/bg_rect_corner_15_11">
+
+        <ImageView
+            android:id="@+id/haokan_icon"
+            android:layout_width="@dimen/dimens_44dp"
+            android:layout_height="@dimen/dimens_44dp"
+            android:layout_marginStart="@dimen/dimen_18dp"
+            android:layout_marginTop="@dimen/dimen_22dp"
+            android:src="@drawable/haokan_logo_tv" />
+
+        <LinearLayout
+            android:id="@+id/haokan_text_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_23dp"
+            android:layout_toRightOf="@id/haokan_icon"
+            android:layout_toLeftOf="@id/haokan_btn"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="没有我想看的内容"
+                android:textColor="#222222"
+                android:textSize="@dimen/dimen_16dp" />
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置内容偏好，让好看更懂你"
+                android:textColor="#888888"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/haokan_btn"
+            android:layout_width="@dimen/dimen_60dp"
+            android:layout_height="@dimen/dimen_28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:background="@drawable/bg_rect_corner_30_"
+            android:gravity="center"
+            android:text="去设置"
+            android:textColor="#FC264A"
+            android:textSize="@dimen/dimen_12dp" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

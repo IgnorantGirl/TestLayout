@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/start_skip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+   <ProgressBar
+       android:layout_width="@dimen/dimen_200dp"
+       android:layout_height="@dimen/dimen_200dp"
+       android:indeterminate="false"
+       android:progress="50"
+      android:max="100"
+       style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+       android:progressDrawable="@drawable/progress_circle"
+       />
+
+       <com.hui.testlayout.widget.HKProgressBar
+           android:id="@+id/phone_accelerate_progressbar"
+           android:layout_width="@dimen/dimens_66dp"
+           android:layout_height="@dimen/dimens_66dp"
+           android:progress="70"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:layout_marginTop="@dimen/dimen_21dp"
+           android:layout_marginEnd="@dimen/dimen_12dp"
+           style="@android:style/Widget.ProgressBar.Horizontal"
+           app:hk_pb_isCapRounded="true"
+           app:hk_pb_isHiddenText="true"
+           app:hk_pb_mode="circle"
+           app:hk_pb_radius="24dp"
+           app:hk_pb_reachedColor="@color/pro_reached_color"
+           app:hk_pb_reachedHeight="@dimen/dimen_8dp"
+           app:hk_pb_startAngle="-90"
+           app:hk_pb_unReachedColor="@color/pro_unreached_color"
+           app:hk_pb_unReachedHeight="@dimen/dimen_8dp" />
+
+</RelativeLayout>

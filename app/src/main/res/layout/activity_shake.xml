@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_layout"
     android:layout_width="match_parent"
@@ -7,15 +8,32 @@
     android:orientation="vertical"
     tools:context=".ShakeActivity">
 
-   <TextView
-       android:id="@+id/tv_shake"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_gravity="center"
-       android:gravity="center"
-       android:text="请摇晃手机"
-       android:textColor="@color/black"
-       android:textSize="30sp"
-       />
+    <TextView
+        android:id="@+id/tv_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="请摇晃手机"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
-</LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_above="@+id/tv_msg"
+        app:lottie_fileName="shake3.json"
+        app:lottie_imageAssetsFolder="images" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扭动或点击跳转详情页或第三方应用"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

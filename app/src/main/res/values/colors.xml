@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="color_fcb526">#fcb526</color>
     <color name="color_80333333">#80333333</color>
     <color name="color_57000000">#57000000</color>
-    <color name="bg_color_333_40">#66333333</color>
+    <color name="color_1E1F24">#1E1F24</color>
 
+
+    <color name="pro_reached_color" tools:ignore="ResourceName">#FC264A</color>
+    <color name="pro_unreached_color" tools:ignore="ResourceName">#E1EAF3</color>
 </resources>

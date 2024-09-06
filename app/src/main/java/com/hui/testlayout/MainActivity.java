@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -16,6 +17,7 @@ import com.hui.testlayout.view.AdLeftLogoImage;
 import com.hui.testlayout.view.BottomInfoView;
 
 import com.hui.testlayout.view.BottomJumpView;
+import com.hui.testlayout.view.ComponentView;
 import com.hui.testlayout.view.CountDownView;
 import com.hui.testlayout.view.RelatedSearchView;
 
@@ -99,6 +101,17 @@ public class MainActivity extends AppCompatActivity {
 
         BottomJumpView jumpView = new BottomJumpView(this);
         container.addView(jumpView);
+        jumpView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 跳转uninstall
+                Intent intent = new Intent(MainActivity.this, UninstallActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ComponentView componentView = new ComponentView(this);
+        container.addView(componentView);
     }
 
     @Override

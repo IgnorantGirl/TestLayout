@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_small_widget_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:ignore="all">
+
+    <LinearLayout
+        android:id="@+id/feed_small_widget_layout_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_1"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        tools:ignore="Suspicious0dp">
+
+        <!--  高度适配  -->
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="@dimen/dimen_110dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/hot_widget_small_tittle_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--    宽度适配    -->
+            <ImageView
+                android:layout_width="@dimen/dimen_110dp"
+                android:layout_height="0px"
+                android:visibility="invisible" />
+
+            <!--    真正的视图    -->
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="39"
+                android:background="@drawable/recommend_collection_icon_v4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/recommend_collection_icon_v4" />
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/recommend_collection_icon_v4" />
+
+                <ImageView
+                    android:id="@+id/hot_widget_img"
+                    android:layout_width="70dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/recommend_collection_icon_v4" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/hot_widget_small_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="31"
+                android:gravity="bottom"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/hot_widget_small_index_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:text="hot_widget_index_str_1"
+                    android:textColor="#FF3333"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/hot_widget_small_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="hot_widget_small_def_title"
+                    android:textColor="#1F1F1F"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hot_widget_small_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="31"
+                android:gravity="bottom"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/hot_widget_small_index_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:text="hot_widget_index_str_2"
+                    android:textColor="#FF6600"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/hot_widget_small_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="hot_widget_small_def_title"
+                    android:textColor="#1F1F1F"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hot_widget_small_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="31"
+                android:gravity="bottom"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:id="@+id/hot_widget_small_index_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:text="hot_widget_index_str_3"
+                    android:textColor="#FFBA31"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/hot_widget_small_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="hot_widget_small_def_title"
+                    android:textColor="#1F1F1F"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="NestedWeights" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="15"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

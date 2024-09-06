@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_corner_3"
+    tools:ignore="ResourceName">
+
+
+    <FrameLayout
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/collect_content_parent"
+        android:layout_gravity="center"
+        android:background="@color/color_80333333"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/collect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_26dp"
+            android:text="选性别、兴趣 享更优" />
+
+
+        <TextView
+            android:id="@+id/collect_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/dimen_15dp"
+            android:text="完善信息，将为你推荐个性化" />
+
+
+<!--        <com.baidu.haokan.widget.FeatureCollectView-->
+<!--            android:id="@+id/collect_sex_group"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/dimen_20dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginRight="@dimen/dimen_20dp"-->
+<!--            android:orientation="vertical" />-->
+
+
+<!--        <com.baidu.haokan.widget.FeatureCollectView-->
+<!--            android:id="@+id/collect_live_group"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/dimen_20dp"-->
+<!--            android:layout_marginTop="27dp"-->
+<!--            android:layout_marginRight="@dimen/dimen_20dp"-->
+<!--            android:orientation="vertical" />-->
+
+
+        <TextView
+            android:id="@+id/collect_btn"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_33dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:alpha="0.5"
+            android:background="@drawable/common_ui_submit_btn_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_17dp" />
+    </LinearLayout>
+
+
+</FrameLayout>
