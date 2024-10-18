@@ -11,4 +11,10 @@
 
     <color name="pro_reached_color" tools:ignore="ResourceName">#FC264A</color>
     <color name="pro_unreached_color" tools:ignore="ResourceName">#E1EAF3</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+    <color name="bg_color_333_40">#66333333</color>
 </resources>

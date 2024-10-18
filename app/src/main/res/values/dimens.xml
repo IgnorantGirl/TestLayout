@@ -647,4 +647,10 @@
     <!-- 相关搜索扩展卡左间距  -->
     <dimen name="feed_related_search_card_left_margin">12dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
 </resources>

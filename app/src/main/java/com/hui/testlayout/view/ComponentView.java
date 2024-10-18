@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import com.hui.testlayout.R;
 
 /**
- * 广告品牌名称
+ * 进度条
  */
 public class ComponentView extends RelativeLayout {
     public ComponentView(Context context) {
@@ -35,8 +35,6 @@ public class ComponentView extends RelativeLayout {
 
     private void init(Context context){
         LayoutInflater.from(context).inflate(R.layout.right_progress, this, true);
-
-
     }
 
 
