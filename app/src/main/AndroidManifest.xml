@@ -27,8 +27,12 @@
         </receiver>
 
         <service android:name=".messeneger.MessengerService" android:process=":remote" />
+        <service android:name=".service.BookManagerService" android:process=":remote" />
         <activity
             android:name=".messeneger.MessengerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.BookManagerActivity"
             android:exported="false" />
         <activity
             android:configChanges="orientation|keyboardHidden"

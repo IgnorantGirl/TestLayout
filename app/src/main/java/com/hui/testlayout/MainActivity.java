@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.hui.testlayout.messeneger.MessengerActivity;
+import com.hui.testlayout.service.BookManagerActivity;
 import com.hui.testlayout.view.AdBrandView;
 import com.hui.testlayout.view.AdLeftLogoImage;
 import com.hui.testlayout.view.BottomInfoView;
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
             public void onSkip() {
                 Log.i("wh_test", "main 跳过广告");
                 // 跳转首页
-                Intent intent = new Intent(MainActivity.this, MessengerActivity.class);
+                Intent intent = new Intent(MainActivity.this, BookManagerActivity.class);
                 startActivity(intent);
             }
         });

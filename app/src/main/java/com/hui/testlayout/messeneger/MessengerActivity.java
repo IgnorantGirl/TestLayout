@@ -70,6 +70,7 @@ public class MessengerActivity extends Activity {
         @Override
         public void onServiceDisconnected(ComponentName name) {
 
+
         }
     };
 }

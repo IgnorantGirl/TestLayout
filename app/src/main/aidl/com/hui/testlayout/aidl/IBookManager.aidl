@@ -1,6 +1,7 @@
 // IBookManager.aidl
 package com.hui.testlayout.aidl;
 import com.hui.testlayout.aidl.Book;
+import com.hui.testlayout.aidl.IOnNewBookArrivedListener;
 
 // Declare any non-default types here with import statements
 interface IBookManager {
@@ -10,5 +11,6 @@ interface IBookManager {
      */
    List<Book> getBookList();
    void addBook(in Book book);
-
+   void registerListener(IOnNewBookArrivedListener listener);
+   void unregisterListener(IOnNewBookArrivedListener listener);
 }
