@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.hui.testlayout.provider.ProviderActivity;
 import com.hui.testlayout.service.BookManagerActivity;
 import com.hui.testlayout.view.AdBrandView;
 import com.hui.testlayout.view.AdLeftLogoImage;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editText;
 
+    Button providerBtn;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,9 +152,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
+        providerBtn = findViewById(R.id.btn_provider);
+        providerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProviderActivity.class);
+                startActivity(intent);
+        }});
     }
 
     @Override

@@ -3,7 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.example.testlayout.permission.ACCESS_BOOK_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <permission android:name="com.example.testlayout.permission.ACCESS_BOOK_SERVICE"
+        android:protectionLevel="normal"/>
+
+    <uses-permission android:name="com.hui.PROVIDER" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -64,6 +71,15 @@
 
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".provider.BookProvider"
+            android:authorities="com.hui.testlayout.provider"
+            android:permission="com.hui.PROVIDER"
+            android:process=":provider"/>
+        <activity
+            android:name=".provider.ProviderActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
