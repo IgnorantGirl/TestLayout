@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 import com.hui.testlayout.provider.ProviderActivity;
 import com.hui.testlayout.service.BookManagerActivity;
+import com.hui.testlayout.service.TCPClientActivity;
 import com.hui.testlayout.view.AdBrandView;
 import com.hui.testlayout.view.AdLeftLogoImage;
 import com.hui.testlayout.view.BottomInfoView;
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
 
     Button providerBtn;
+    Button tcpBtn;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,6 +161,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ProviderActivity.class);
                 startActivity(intent);
         }});
+
+        tcpBtn = findViewById(R.id.btn_tcp);
+        tcpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TCPClientActivity.class);
+                startActivity(intent);
+            }});
     }
 
     @Override

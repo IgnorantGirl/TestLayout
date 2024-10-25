@@ -80,6 +80,10 @@
         <activity
             android:name=".provider.ProviderActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".service.TCPClientActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
